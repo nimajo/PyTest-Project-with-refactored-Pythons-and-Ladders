@@ -1,6 +1,6 @@
 import turtle
 from game_logic import roll_dice, update_position, check_win, WINNING_TILE
-import board  
+import board
 
 # Setup the board and get player turtles
 bull, cow = board.setup_board()
