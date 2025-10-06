@@ -1,5 +1,6 @@
 import turtle
 import os 
+
 os.chdir(os.path.dirname(__file__)) #Changes Working Directory to the file's directory
 
 # global score variables used for scoreboard
@@ -284,7 +285,7 @@ def main(): #defining the main which contains all subprograms
             global score_2 
             player1 = turtle.textinput("Player 1", "Name of the player: ") # Takes Player1's Name with popout box
             
-            player2 = turtle.textinput("Player 2", "Name of the player: ") # Takes Player1's Name with popout box
+            player2 = turtle.textinput("Player 2", "Name of the player: ") # Takes Player2's Name with popout box
 
 
 # Scoreboard system - Has to be after player name variables to avoid error
