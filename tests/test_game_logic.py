@@ -33,10 +33,10 @@ def test_update_position(position, roll, expected):
 
 ### Winning Tile Check Test ######
 @pytest.mark.parametrize("position, expected", [
-    (25, True),
-    (24, False),
-    (1, False),
-    (0, False),
+    (25, True), #Winning position
+    (24, False), #Not a winning position
+    (1, False), #Not a winning position
+    (0, False), #Not a winning position
 ])
 def test_check_win(position, expected):
     assert gl.check_win(position) == expected, f"Position {position} win check failed"
