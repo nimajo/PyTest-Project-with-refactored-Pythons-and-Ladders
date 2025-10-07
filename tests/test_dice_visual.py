@@ -4,3 +4,19 @@ import pytest
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 import dice_visual as dv
+
+def get_dice_image(roll_value):
+    return f"dice{roll_value}.gif"
+
+@pytest.mark.parametrize("roll_value, expected_image", [
+    (1, "dice1.gif"),
+    (2, "dice2.gif"),
+    (3, "dice3.gif"),
+    (4, "dice4.gif"),
+    (5, "dice5.gif"),
+    (6, "dice6.gif"),
+    (7, None),  # Invalid case
+    (0, None),  # Invalid case
+])
+def test_get_dice_image(roll_value, expected_image):
+    assert get_dice_image(roll_value) == expected_image
