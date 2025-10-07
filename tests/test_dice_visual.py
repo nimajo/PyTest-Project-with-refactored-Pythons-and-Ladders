@@ -9,12 +9,12 @@ def get_dice_image(roll_value):
     return f"dice{roll_value}.gif"
 
 @pytest.mark.parametrize("roll_value, expected_image", [
-    (1, "dice1.gif"),
-    (2, "dice2.gif"),
-    (3, "dice3.gif"),
-    (4, "dice4.gif"),
-    (5, "dice5.gif"),
-    (6, "dice6.gif"),
+    (1, "assets/dice1.gif"),
+    (2, "assets/dice2.gif"),
+    (3, "assets/dice3.gif"),
+    (4, "assets/dice4.gif"),
+    (5, "assets/dice5.gif"),
+    (6, "assets/dice6.gif"),
     (7, None),  # Invalid case
     (0, None),  # Invalid case
 ])

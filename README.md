@@ -1,5 +1,9 @@
 The purpose of this project is to conduct Unit Testing using PyTest on a previous Python project of mine named 'Pythons & Ladders' to practise QA Analysis skills. The previous project contained beginner-level Python code with a lack of functions; the code has been refactored to be modular, clean and testable. The previous version will still be available on my GitHub to showcase the differences.
 
+To run the board game, please use 'main.py'.
+
+
+
 Dice Roll Unit Test
 
 

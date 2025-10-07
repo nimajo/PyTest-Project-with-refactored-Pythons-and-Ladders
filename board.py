@@ -88,13 +88,13 @@ def draw_snakes_and_ladders():
     screen = turtle.Screen()
 
     # Add shapes
-    screen.addshape("ladder.gif")
-    screen.addshape("snake.gif")
+    screen.addshape("assets/ladder.gif")
+    screen.addshape("assets/snake.gif")
 
     # Draw ladders
     for start, end in LADDERS.items():
         ladder = turtle.Turtle()
-        ladder.shape("ladder.gif")
+        ladder.shape("assets/ladder.gif")
         ladder.penup()
         x1, y1 = get_tile_coords(start)
         x2, y2 = get_tile_coords(end)
@@ -103,7 +103,7 @@ def draw_snakes_and_ladders():
     # Draw snakes
     for head, tail in SNAKES.items():
         snake = turtle.Turtle()
-        snake.shape("snake.gif")
+        snake.shape("assets/snake.gif")
         snake.penup()
         x1, y1 = get_tile_coords(head)
         x2, y2 = get_tile_coords(tail)
@@ -113,16 +113,16 @@ def draw_snakes_and_ladders():
 def setup_players():
     """Initialize bull and cow player pieces."""
     screen = turtle.Screen()
-    screen.addshape("bull.gif")
-    screen.addshape("cow.gif")
+    screen.addshape("assets/bull.gif")
+    screen.addshape("assets/cow.gif")
 
     bull = turtle.Turtle()
-    bull.shape("bull.gif")
+    bull.shape("assets/bull.gif")
     bull.penup()
     bull.goto(*get_tile_coords(1))
 
     cow = turtle.Turtle()
-    cow.shape("cow.gif")
+    cow.shape("assets/cow.gif")
     cow.penup()
     x, y = get_tile_coords(1)
     cow.goto(x, y - 40)  # offset to avoid overlap
@@ -147,21 +147,21 @@ def show_dice(roll_value):
     
     # Add shapes only once (you can move this outside the function if you want)
     for i in range(1, 7):
-        screen.addshape(f"dice{i}.gif")
+        screen.addshape(f"assets/dice{i}.gif")
 
     # Create dice turtle
     dice_turtle = turtle.Turtle()
     dice_turtle.hideturtle()
     dice_turtle.penup()
     dice_turtle.goto(250, 250)  # top-right corner
-    dice_turtle.shape(f"dice{roll_value}.gif")
+    dice_turtle.shape(f"assets/dice{roll_value}.gif")
     dice_turtle.showturtle()
     
 def show_win(player_name):
     screen = turtle.Screen()
-    screen.addshape("win.gif")
+    screen.addshape("assets/win.gif")
     win_turtle = turtle.Turtle()
-    win_turtle.shape("win.gif")
+    win_turtle.shape("assets/win.gif")
     win_turtle.penup()
     win_turtle.goto(0, 0)  # center of the screen
     win_turtle.st()

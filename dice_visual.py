@@ -6,8 +6,8 @@ def show_dice(roll_value):
     dice = turtle.Turtle()
     dice.penup()
     dice.goto(325, 240)
-    screen.addshape(f"dice{roll_value}.gif")
-    dice.shape(f"dice{roll_value}.gif")
+    screen.addshape(f"assets/dice{roll_value}.gif")
+    dice.shape(f"assets/dice{roll_value}.gif")
     dice.st()
     
 def create_player(image_path, start_x, start_y):
