@@ -2,7 +2,7 @@ The purpose of this project is to conduct Unit Testing using PyTest on a previou
 
 To run the board game, please use 'main.py'.
 
-
+#### - Game Logic Tests - ####
 
 Dice Roll Unit Test
 
@@ -18,3 +18,11 @@ Winning Tile Test
 
 
 <img width="714" height="278" alt="image" src="https://github.com/user-attachments/assets/13bedd99-2ed0-4078-8a5d-ad8c4b34d457" />
+
+
+#### - Dice Visual Test - ####
+
+
+<img width="463" height="306" alt="image" src="https://github.com/user-attachments/assets/dc2cea96-9c82-4c28-9606-619ada4b4042" />
+
+
